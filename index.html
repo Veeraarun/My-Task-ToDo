@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-links">
+            <a href="https://www.instagram.com/https_veera/"><img src="assests/1298747_instagram_brand_logo_social media_icon.png"></a>
+        </nav>
+        <h2 class="logo">My ToDo List</h2>
+    </header>
+    
+
+    <div class="displayContainer">
+        <input type="text" placeholder="ToDo Name" class="js-input" aria-label="Todo Name">
+        <input type="date" class="js-date" aria-label="Todo Date">
+        <input type="time" class="js-time" aria-label="ToDo Time">
+        <button onclick="addToDo();" class="addButton">Enter...</button>
+     </div>
+     <div class="displayList">
+        <div class="js-displayInput"></div>
+        <div class="js-displayDate"></div>
+        <div class="js-displayTime"></div>
+        <div class="button"></div>
+     </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+

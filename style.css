@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assests/output-onlinegiftools.gif);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100vw;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+  display: flex;
+  padding: 15px 20px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5rem;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  left: 45%;
+
+}
+img{
+  width: 25px;
+}
+
+.displayContainer {
+  display: grid;
+  gap: 1.5rem;
+  width: 80%;
+  max-width: 40rem;
+  max-height: 40%;
+  margin: auto;
+  height: 10rem;
+}
+
+.js-input,
+.js-date,
+.js-time {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 18px;
+  box-shadow: 2px 2px 10px rgba(33, 64, 0, 0.596);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.js-input {
+  background-color: rgb(17, 33, 33);
+  color: white;
+}
+.js-input:focus{
+  box-shadow: 2px 2px 12px rgb(106, 124, 1);
+  border-color: #b5b807;
+}
+
+.js-date {
+  background-color: rgb(202, 242, 187);
+}
+.js-date:focus{
+  box-shadow: 2px 2px 12px rgb(17, 33, 33);
+  border-color: #b5b807;
+}
+
+.js-time{
+  background-color: rgb(202, 242, 187);
+  padding: 16px;
+}
+.js-time:focus{
+  box-shadow: 2px 2px 12px rgb(17, 33, 33);
+  border-color: #b5b807;
+}
+
+.addButton {
+  font-size: 1.1rem;
+  background-color: rgb(220, 247, 223);
+  width: 50%;
+  margin: auto;
+  border: none;
+  border-radius: 100px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s all;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px lightgreen;
+}
+.addButton:hover {
+  background-color: rgb(237, 255, 222);
+  box-shadow: 2px 2px 10px rgb(0, 99, 0);
+}
+
+.displayList {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  max-width: 60rem;
+  max-height: 40%;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.541);
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 15px 15px 0px 0px;
+  color: white;
+  font-size: 1.2rem;
+}
+.button {
+  display: grid;
+  row-gap: 1rem;
+  
+  button{
+  background-color: lightgreen;
+  min-height: 40px;
+  max-height: 40px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 2px 2px 10px rgb(125, 124, 124);
+  font-size: 1rem;
+  transition: 2sec all;
+  }
+  button:hover{
+    background-color: rgba(144, 238, 144, 0.646);
+    font-size: 1.1rem;
+  }
+}
+
+.js-displayInput,
+.js-displayDate,
+.js-displayTime {
+  height: auto;
+  display: grid;
+  row-gap: 1rem;
+  p{
+    max-height: 40px;
+    background-color: #373737b3;
+    margin: 0;
+    padding: .5rem 1rem;
+    text-align: center;
+    
+  }
+}
+
+.js-displayInput p{
+  border-radius: 10px 0px 0px 10px;
+}
+
+.js-displayDate,
+.js-displayTime{
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+ 
+  .displayList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .displayList {
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    max-height: 200px;
+  }
+}
