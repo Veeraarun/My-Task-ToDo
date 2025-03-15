@@ -157,7 +157,8 @@ img{
 }
 
 .js-displayDate,
-.js-displayTime{
+.js-displayTime,
+.js-displayInput{
   white-space: nowrap;
 }
 
@@ -173,6 +174,5 @@ img{
   .displayList {
     grid-template-columns: repeat(4,1fr);
     width: 100%;
-    max-height: 200px;
   }
 }
